@@ -96,19 +96,32 @@ $(document).ready(function(){
 		}
 	});
 
-
 	// 侧边栏的层级菜单无需 id 即可折叠
 	$('#side-menu [data-toggle="collapse-menu"]').on('click', function(e) {
 		e.preventDefault();
+
+		// 同级项自动折叠(accordion)
+		if ($(this).hasClass("collapsed")) {
+			var $other_in = $(this).parent().siblings().children('ul.in, ul.collapsing');
+			$other_in.collapse('hide');
+			$other_in.prev('a').addClass('collapsed');
+		}
+
 		$(this).toggleClass('collapsed');
 		$(this).next('ul').collapse('toggle');
 	});
 
-	// 侧边栏的层级菜单同级项自动折叠(accordion)
-	$('#side-menu .collapse').on('show.bs.collapse', function () {
-		var $in = $(this).parent().siblings().children('ul.in, ul.collapsing');
-		$in.collapse('hide');
-		$in.prev('a').addClass('collapsed');
+	// 侧边栏的说明无需 id 即可折叠
+	$('#side-accordion [data-toggle="collapse-accordion"]').on('click', function(e) {
+		e.preventDefault();
+
+		// 同级项自动折叠(accordion)
+		var $this_collapse = $(this).parent().parent().next('div.panel-collapse');
+		if (!$this_collapse.hasClass("in")) {
+			$this_collapse.parent().siblings().children('div.in, div.collapsing').collapse('hide');
+		}
+
+		$this_collapse.collapse('toggle');
 	});
 
 });

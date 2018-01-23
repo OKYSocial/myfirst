@@ -103,7 +103,7 @@
 		<div class="tab-content">
 			<div id="tab-menu" role="tabpanel" class="tab-pane active">
 				<div class="panel panel-default">
-					<ul id="side-menu" class="nav" role="tablist" aria-multiselectable="true">
+					<ul id="side-menu" class="nav" role="tablist">
 						<li><a href="#"><i class="fa fa-home fa-fw"></i> 首页</a></li>
 						<li><a href="#"><i class="fa fa-paw fa-fw"></i> 菜单项 1 <span class="label label-default">默认</span></a></li>
 						<li>
@@ -156,42 +156,42 @@
 				</div>
 			</div>
 			<div id="tab-accordion" role="tabpanel" class="tab-pane">
-				<div id="side-accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+				<div id="side-accordion" class="panel-group" role="tablist">
 					<div class="panel panel-primary">
-						<div id="accordion-heading-1" class="panel-heading" role="tab">
+						<div class="panel-heading" role="tab">
 							<div class="panel-title">
-								<a role="button" data-toggle="collapse" data-parent="#side-accordion" href="#accordion-collapse-1" aria-expanded="true" aria-controls="accordion-collapse-1">
+								<a role="button" data-toggle="collapse-accordion">
 									说明项目 1
 								</a>
 							</div>
 						</div>
-						<div id="accordion-collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="accordion-heading-1">
+						<div class="panel-collapse collapse in" role="tabpanel">
 							<div class="panel-body">说明正文内容。后面是示例文字。后面是示例文字。后面是示例文字。后面是示例文字。</div>
 							<div class="panel-footer">说明底栏</div>
 						</div>
 					</div>
 					<div class="panel panel-primary">
-						<div id="accordion-heading-2" class="panel-heading" role="tab">
+						<div class="panel-heading" role="tab">
 							<div class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#side-accordion" href="#accordion-collapse-2" aria-expanded="false" aria-controls="accordion-collapse-2">
+								<a role="button" data-toggle="collapse-accordion">
 									说明项目 2
 								</a>
 							</div>
 						</div>
-						<div id="accordion-collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="accordion-heading-2">
+						<div class="panel-collapse collapse" role="tabpanel">
 							<div class="panel-body">说明正文内容。</div>
 							<div class="panel-footer">说明底栏</div>
 						</div>
 					</div>
 					<div class="panel panel-primary">
-						<div id="accordion-heading-3" class="panel-heading" role="tab">
+						<div class="panel-heading" role="tab">
 							<div class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#side-accordion" href="#accordion-collapse-3" aria-expanded="false" aria-controls="accordion-collapse-3">
+								<a role="button" data-toggle="collapse-accordion">
 									说明项目 3
 								</a>
 							</div>
 						</div>
-						<div id="accordion-collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="accordion-heading-3">
+						<div class="panel-collapse collapse" role="tabpanel">
 							<div class="panel-body">说明正文内容。</div>
 							<div class="panel-footer">说明底栏</div>
 						</div>
@@ -225,6 +225,7 @@
 				<h1 id="hello" class="anchor">欢迎致辞</h1>
 				<p>下面这一段欢迎致辞是示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。</p>
 				<p class="text-danger"><span class="label label-danger">错误</span>：在 off-canvas 状态时点击当前页面内的锚点链接，部分浏览器会显示错位。</p>
+				<p class="text-info"><span class="label label-info">待完成</span>：是否需要对 IE8 做兼容性调整。</p>
 				<p class="text-info"><span class="label label-info">待完成</span>：顶部 Popover 的内容和实现方式未定。</p>
 				<p class="text-info"><span class="label label-info">待完成</span>：这个模板是单页面模板，后期可能添加多个子页面。</p>
 				<p><a class="btn btn-primary btn-lg" href="#" role="button">更多内容</a></p>
@@ -362,7 +363,7 @@
 </div>
 
 <!-- jQuery -->
-<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- Bootstrap Select -->
