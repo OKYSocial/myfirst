@@ -102,13 +102,17 @@ $(document).ready(function(){
 
 		// 同级项自动折叠(accordion)
 		if ($(this).hasClass("collapsed")) {
-			var $other_in = $(this).parent().siblings().children('ul.in, ul.collapsing');
-			$other_in.collapse('hide');
-			$other_in.prev('a').addClass('collapsed');
-		}
+			$(this).removeClass('collapsed');
+			$(this).next('ul.nav').collapse('show');
 
-		$(this).toggleClass('collapsed');
-		$(this).next('ul').collapse('toggle');
+			var $other_in = $(this).parent().siblings().children('ul.in');
+			$other_in.collapse('hide');
+			$other_in.prev('a.handle').addClass('collapsed');
+		}
+		else {
+			$(this).addClass('collapsed');
+			$(this).next('ul.nav').collapse('hide');
+		}
 	});
 
 	// 侧边栏的说明无需 id 即可折叠

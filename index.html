@@ -30,7 +30,7 @@
 <body data-spy="scroll" data-target="#top-scroll">
 <div id="main">
 	<div id="brand">
-		<a href="#"><i class="fa fa-paper-plane"></i> 初始模板</a>
+		<i class="fa fa-paper-plane text-info"></i> <a href="#">初始模板</a>
 	</div>
 
 	<div id="topbar" role="navigation">
@@ -42,10 +42,11 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-arrow-right"></i> 定位 <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#top">顶部</a></li>
+							<li><a href="#top">顶部 <i class="fa fa-arrow-up"></i></a></li>
 							<li><a href="#hello">欢迎致辞</a></li>
 							<li><a href="#dashboard">控制面板</a></li>
-							<li><a href="#bottom">底部</a></li>
+							<li><a href="#table">表格样式</a></li>
+							<li><a href="#bottom">底部 <i class="fa fa-arrow-down"></i></a></li>
 						</ul>
 					</li>
 				</ul>
@@ -71,11 +72,6 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<input type="hidden" id="route" />
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
-					<div class="modal-title"><i class="fa fa-spinner fa-pulse fa-fw"></i> 正在加载</div>
-				</div>
-				<div class="modal-body">加载中，请耐心等待。</div>
 			</div>
 		</div>
 	</div>
@@ -219,7 +215,6 @@
 		<div class="alert alert-warning" role="alert">警告类型(warning)的文字内容，并且 <a href="#" class="alert-link">链接</a> 会随之变色。</div>
 		<div class="alert alert-danger" role="alert">危险类型(danger)的文字内容，并且 <a href="#" class="alert-link">这个链接</a> 也会随之变色。</div>
 
-
 		<div class="jumbotron">
 			<div class="container">
 				<h1 id="hello" class="anchor">欢迎致辞</h1>
@@ -262,7 +257,7 @@
 			</div>
 		</div>
 
-		<h2>表格</h2>
+		<h2 id="table" class="anchor">表格样式</h2>
 		<div class="table-responsive">
 			<table class="table table-striped">
 				<thead>
@@ -357,7 +352,7 @@
 		</div>
 
 		<div id="bottom" class="anchor">
-			&copy; MyFirst Template.
+			&copy; MyFirst Template &bull; 1.0
 		</div>
 	</div>
 </div>
