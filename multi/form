@@ -1,0 +1,91 @@
+<div class="modal-dialog" role="document"><div class="modal-content">
+<form class="form-horizontal">
+	<input type="hidden" id="route" value="multi/form" />
+	<input type="hidden" id="step-max" value="2" />
+	<input type="hidden" id="step-now" value="0" />
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+		<div class="modal-title"><i class="fa fa-exchange fa-fw"></i> 多步表单</div>
+	</div>
+	<div class="modal-body">
+		<div id="multi-form-carousel" class="carousel slide" data-interval="false" data-wrap="false">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="form-group">
+						<label class="col-sm-2 control-label">分类</label>
+						<div class="col-sm-10">
+							<div class="radio">
+								<label>
+									<input type="radio" name="category" value="A" /> 分类 A
+								</label>
+								<span class="help-block">
+									分类 A 的说明。
+								</span>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="category" value="B" /> 分类 B
+								</label>
+								<span class="help-block">
+									分类 B 的说明。
+								</span>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="category" value="C" /> 分类 C
+								</label>
+								<span class="help-block">
+									分类 C 的说明。
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="form-group">
+						<label for="article-title" class="col-sm-2 control-label">标题</label>
+						<div class="col-sm-10">
+							<input id="article-title" type="text" class="form-control" placeholder="标题内容" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="article-body" class="col-sm-2 control-label">正文</label>
+						<div class="col-sm-10">
+							<textarea id="article-body" type="text" class="form-control" rows="8" placeholder="正文内容"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="form-group">
+						<label for="article-select" class="col-sm-2 control-label">选择</label>
+						<div class="col-sm-10">
+							<select class="selectpicker form-control" multiple="multiple" title="选项列表，可多选">
+								<option>选项一</option>
+								<option>选项二</option>
+								<option>选项三</option>
+							</select>
+							<span class="help-block">本部件功能由 <a href="https://github.com/silviomoreto/bootstrap-select" target="blank">bootstrap-select</a> 提供。</span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="article-date" class="col-sm-2 control-label">日期</label>
+						<div class="col-sm-10">
+							<div class="input-group input-daterange">
+								<input type="text" class="form-control" />
+								<div class="input-group-addon">到</div>
+								<input type="text" class="form-control" />
+							</div>
+							<span class="help-block">本部件功能由 <a href="https://github.com/uxsolutions/bootstrap-datepicker" target="blank">bootstrap-datepicker</a> 提供。</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a class="btn btn-default" href="#multi-form-carousel" role="button" data-slide="prev">上一步</a>
+		<a class="btn btn-default" href="#multi-form-carousel" role="button" data-slide="next">下一步</a>
+		<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	</div>
+</form>
+</div></div>
