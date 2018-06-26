@@ -96,6 +96,32 @@ $(document).ready(function(){
 		}
 	});
 
+	// 模态框内部的整合表单 all-in-one
+	$('#top-modal').on('slid.bs.carousel','#multi-form', function(event) {
+		var target = $(event.relatedTarget);
+		switch ($('#multi-form .item.active').index()) {
+			case $('#multi-form .item:first').index():
+				$('#top-modal .modal-footer').html(
+					'<a class="btn btn-default" href="#multi-form" role="button" data-slide="next">下一步</a>' +
+					'<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>'
+				);
+			break;
+			case $('#multi-form .item:last').index():
+				$('#top-modal .modal-footer').html(
+					'<a class="btn btn-default" href="#multi-form" role="button" data-slide="prev">上一步</a>' +
+					'<button type="submit" class="btn btn-primary">提交表单</button>' +
+					'<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>'
+				);
+			break;
+			default:
+				$('#top-modal .modal-footer').html(
+					'<a class="btn btn-default" href="#multi-form" role="button" data-slide="prev">上一步</a>' +
+					'<a class="btn btn-default" href="#multi-form" role="button" data-slide="next">下一步</a>' +
+					'<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>'
+				);
+		};
+	});
+
 	// 侧边栏的层级菜单无需 id 即可折叠
 	$('#side-menu [data-toggle="collapse-menu"]').on('click', function(e) {
 		e.preventDefault();
@@ -127,5 +153,4 @@ $(document).ready(function(){
 
 		$this_collapse.collapse('toggle');
 	});
-
 });

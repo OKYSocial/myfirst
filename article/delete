@@ -22,7 +22,7 @@
 		</div>
 	</div>
 	<div class="modal-footer">
-		<button type="button" class="btn btn-primary">删除文章</button>
+		<button type="button" class="btn btn-danger">删除文章</button>
 		<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
 	</div>
 </form>

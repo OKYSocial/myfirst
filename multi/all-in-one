@@ -1,14 +1,12 @@
 <div class="modal-dialog" role="document"><div class="modal-content">
 <form class="form-horizontal">
-	<input type="hidden" id="route" value="multi/form" />
-	<input type="hidden" id="step-max" value="2" />
-	<input type="hidden" id="step-now" value="0" />
+	<input type="hidden" id="route" value="multi/all-in-one" />
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
-		<div class="modal-title"><i class="fa fa-exchange fa-fw"></i> 多步表单</div>
+		<div class="modal-title"><i class="fa fa-arrows-h fa-fw"></i> 整合表单</div>
 	</div>
 	<div class="modal-body">
-		<div id="multi-form-carousel" class="carousel slide" data-interval="false" data-wrap="false">
+		<div id="multi-form" class="carousel slide" data-interval="false" data-wrap="false">
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
 					<div class="form-group">
@@ -83,8 +81,7 @@
 		</div>
 	</div>
 	<div class="modal-footer">
-		<a class="btn btn-default" href="#multi-form-carousel" role="button" data-slide="prev">上一步</a>
-		<a class="btn btn-default" href="#multi-form-carousel" role="button" data-slide="next">下一步</a>
+		<a class="btn btn-default" href="#multi-form" role="button" data-slide="next">下一步</a>
 		<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
 	</div>
 </form>
