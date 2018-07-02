@@ -1,0 +1,41 @@
+<div class="modal-dialog" role="document"><div class="modal-content">
+<form class="form-horizontal">
+	<input type="hidden" id="route" value="multi/step" />
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+		<div class="modal-title"><i class="fa fa-exchange fa-fw"></i> 多步表单 - 第一步</div>
+	</div>
+	<div class="modal-body">
+		<div class="form-group">
+			<label class="col-sm-2 control-label">分类</label>
+			<div class="col-sm-10">
+				<div class="radio">
+					<label>
+						<input type="radio" name="category" value="A" /> 分类 A
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="category" value="B" /> 分类 B
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="category" value="C" /> 分类 C
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group has-success">
+			<label class="col-sm-2 control-label">提示信息</label>
+			<div class="col-sm-10">
+				<span class="help-block">本页面虽然具有提交功能，但因 HTML 无法处理提交的数据，故这里提交的数据仅具演示作用。</span>
+			</div>
+		</div>
+  </div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-default" data-action="multi/step2" data-selector="#top-modal form">下一步</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	</div>
+</form>
+</div></div>

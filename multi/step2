@@ -1,0 +1,64 @@
+<div class="modal-dialog modal-lg" role="document"><div class="modal-content">
+<form method="post" class="form-horizontal">
+	<input type="hidden" id="route" value="multi/step" />
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+		<div class="modal-title"><i class="fa fa-exchange fa-fw"></i> 多步表单 - 第二步</div>
+	</div>
+	<div class="modal-body">
+		<div class="form-group">
+			<label class="col-sm-2 control-label">分类</label>
+			<div class="col-sm-10">
+				<input type="hidden" name="category" value="A" />
+				<p class="form-control-static">分类 A</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="article-title" class="col-sm-2 control-label">标题</label>
+			<div class="col-sm-10">
+				<input id="article-title" type="text" class="form-control" placeholder="标题内容" />
+				<span class="help-block">您可以看下 <code>js/myfirst.js</code> 文件，以便了解这个表单是如何加载的。</span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="article-body" class="col-sm-2 control-label">正文</label>
+			<div class="col-sm-10">
+				<textarea id="article-body" type="text" class="form-control" rows="8" placeholder="正文内容"></textarea>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="article-select" class="col-sm-2 control-label">选择</label>
+			<div class="col-sm-10">
+				<select id="article-select" class="selectpicker form-control" multiple="multiple" title="选项列表，可多选">
+					<option>选项一</option>
+					<option>选项二</option>
+					<option>选项三</option>
+				</select>
+				<span class="help-block">本部件功能由 <a href="https://github.com/silviomoreto/bootstrap-select" target="blank">bootstrap-select</a> 提供。</span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="article-date" class="col-sm-2 control-label">日期</label>
+			<div class="col-sm-10">
+				<div class="input-group input-daterange">
+					<input type="text" class="form-control" />
+					<div class="input-group-addon">到</div>
+					<input type="text" class="form-control" />
+				</div>
+				<span class="help-block">本部件功能由 <a href="https://github.com/uxsolutions/bootstrap-datepicker" target="blank">bootstrap-datepicker</a> 提供。</span>
+			</div>
+		</div>
+		<div class="form-group has-success">
+			<label class="col-sm-2 control-label">提示信息</label>
+			<div class="col-sm-10">
+				<span class="help-block">因 HTML 无法处理提交的数据，故本页面仅演示提交“分类 A”的情况。实际数据应交由服务器后台（如 PHP）处理。</span>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-default" data-action="multi/step">上一步</button>
+		<button type="submit" class="btn btn-primary">添加文章</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	</div>
+</form>
+</div></div>

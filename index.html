@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>初始模板</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap Select -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+	<!-- Bootstrap Datepicker -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css">
+
+	<!-- Myfirst -->
+	<link href="css/myfirst.css" rel="stylesheet">
+	<!-- Custom -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body data-spy="scroll" data-target="#top-scroll">
+<div id="main">
+	<div id="brand">
+		<i class="fa fa-paper-plane text-info"></i> <a href="#">初始模板</a>
+	</div>
+
+	<div id="topbar" role="navigation">
+		<div class="pull-left">
+			<a id="menu-toggle" class="btn btn-warning" role="button"><i class="fa fa-bars"></i> 菜单</a>
+
+			<div id="top-scroll" class="btn-group">
+				<ul class="nav nav-pills" role="tablist">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-arrow-right"></i> 定位 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#top">顶部 <i class="fa fa-arrow-up"></i></a></li>
+							<li><a href="#hello">欢迎致辞</a></li>
+							<li><a href="#dashboard">控制面板</a></li>
+							<li><a href="#table">表格样式</a></li>
+							<li><a href="#bottom">底部 <i class="fa fa-arrow-down"></i></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="pull-right">
+			<a id="top-pop" tabindex="0" role="button" class="btn btn-warning" data-toggle="popover" data-url="URL" title="弹出框"><i class="fa fa-bookmark"></i> <span class="caret"></span></a>
+
+			<div class="btn-group">
+				<a role="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-alt"></i> <span class="caret"></span></a>
+				<ul class="dropdown-menu dropdown-menu-right">
+					<li><a role="button" data-toggle="modal" data-route="article/add" data-target="#top-modal"><i class="fa fa-plus fa-fw"></i> 添加文章</a></li>
+					<li><a role="button" data-toggle="modal" data-route="article/update" data-target="#top-modal"><i class="fa fa-refresh fa-fw"></i> 修改文章</a></li>
+					<li><a role="button" data-toggle="modal" data-route="article/delete" data-target="#top-modal"><i class="fa fa-trash fa-fw"></i> 删除文章</a></li>
+					<li><a role="button" data-toggle="modal" data-route="multi/step" data-target="#top-modal"><i class="fa fa-cog fa-exchange fa-fw"></i> 多步表单</a></li>
+					<li><a role="button" data-toggle="modal" data-route="error" data-target="#top-modal"><i class="fa fa-cog fa-spin fa-fw"></i> 错误调用</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="top-modal" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<input type="hidden" id="route" />
+			</div>
+		</div>
+	</div>
+
+	<div id="sidebar">
+		<div id="side-profile" class="clearfix">
+			<img id="side-avatar" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-circle" alt="Generic placeholder" />
+			<div id="side-hello">
+				<p>
+					<span class="text-muted">欢迎您，</span><br/>
+					<a href="#profile"><i class="fa fa-user"></i> 您的名字</a><br/>
+					<em>您的头衔</em>
+				</p>
+				<p class="text-right">
+					<a href="#logout"><i class="fa fa-sign-out"></i> 退出</a><br/>
+				</p>
+			</div>
+		</div>
+
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#tab-menu" aria-controls="tab-menu" role="tab" data-toggle="tab">菜单</a></li>
+			<li role="presentation"><a href="#tab-list" aria-controls="tab-list" role="tab" data-toggle="tab">列表</a></li>
+			<li role="presentation"><a href="#tab-accordion" aria-controls="tab-accordion" role="tab" data-toggle="tab">说明</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="tab-menu" role="tabpanel" class="tab-pane active">
+				<div class="panel panel-default">
+					<ul id="side-menu" class="nav" role="tablist">
+						<li><a href="#"><i class="fa fa-home fa-fw"></i> 首页</a></li>
+						<li><a href="#"><i class="fa fa-paw fa-fw"></i> 菜单项 1 <span class="label label-default">默认</span></a></li>
+						<li>
+							<a role="button" class="handle collapsed" data-toggle="collapse-menu">
+								<span class="caret"></span>
+								<i class="fa fa-gift fa-fw"></i>
+								可折叠菜单项 2
+							</a>
+							<ul class="nav collapse" role="tabpanel">
+								<li><a href="#">子菜单项 2-1</a></li>
+								<li><a href="#">子菜单项 2-2 <span class="label label-danger">危险</span></a></li>
+								<li><a href="#">子菜单项 2-3</a></li>
+							</ul>
+						</li>
+						<li class="active">
+							<a role="button" class="handle collapsed" data-toggle="collapse-menu">
+								<span class="caret"></span>
+								<i class="fa fa-tasks fa-fw"></i>
+								可折叠菜单项 3
+							</a>
+							<ul class="nav collapse" role="tabpanel">
+								<li><a href="#">子菜单项 3-1</a></li>
+								<li><a href="#">子菜单项 3-2</a></li>
+								<li><a href="#">子菜单项 3-3</a></li>
+								<li class="active">
+									<a role="button" class="handle collapsed" data-toggle="collapse-menu">
+										<span class="caret"></span>
+										可折叠菜单项 3-4
+									</a>
+									<ul class="nav collapse" role="tabpanel">
+										<li class="active"><a href="#">子菜单项 3-4-1 <span class="label label-warning">警告</span></a></li>
+										<li><a href="#">子菜单项 3-4-2</a></li>
+										<li><a href="#">子菜单项 3-4-3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="tab-list" role="tabpanel" class="tab-pane">
+				<div class="panel panel-default">
+					<div id="side-list" class="list-group">
+						<a href="#" class="list-group-item"><span class="badge">1</span> 列表项目 1</a>
+						<a href="#" class="list-group-item"><span class="badge">22</span> 列表项目 2</a>
+						<a href="#" class="list-group-item active"><span class="badge">333</span> 列表项目 3</a>
+						<a href="#" class="list-group-item"><span class="badge">4444</span> 列表项目 4</a>
+						<a href="#" class="list-group-item list-group-item-success"><span class="badge">new!</span> 列表项目 5</a>
+					</div>
+				</div>
+			</div>
+			<div id="tab-accordion" role="tabpanel" class="tab-pane">
+				<div id="side-accordion" class="panel-group" role="tablist">
+					<div class="panel panel-primary">
+						<div class="panel-heading" role="tab">
+							<div class="panel-title">
+								<a role="button" data-toggle="collapse-accordion">
+									说明项目 1
+								</a>
+							</div>
+						</div>
+						<div class="panel-collapse collapse in" role="tabpanel">
+							<div class="panel-body">说明正文内容。后面是示例文字。后面是示例文字。后面是示例文字。后面是示例文字。</div>
+							<div class="panel-footer">说明底栏</div>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading" role="tab">
+							<div class="panel-title">
+								<a role="button" data-toggle="collapse-accordion">
+									说明项目 2
+								</a>
+							</div>
+						</div>
+						<div class="panel-collapse collapse" role="tabpanel">
+							<div class="panel-body">说明正文内容。</div>
+							<div class="panel-footer">说明底栏</div>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading" role="tab">
+							<div class="panel-title">
+								<a role="button" data-toggle="collapse-accordion">
+									说明项目 3
+								</a>
+							</div>
+						</div>
+						<div class="panel-collapse collapse" role="tabpanel">
+							<div class="panel-body">说明正文内容。</div>
+							<div class="panel-footer">说明底栏</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="top" class="anchor"></div>
+
+		<ol class="breadcrumb">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">可折叠菜单项 3</a></li>
+			<li><a href="#">可折叠菜单项 3-4</a></li>
+			<li class="active">子菜单项 3-4-1</li>
+		</ol>
+
+		<div class="alert alert-success" role="alert">成功类型(success)的文字内容。</div>
+		<div class="alert alert-info alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			信息类型(info)的文字内容，并添加了关闭按钮。
+		</div>
+		<div class="alert alert-warning" role="alert">警告类型(warning)的文字内容，并且 <a href="#" class="alert-link">链接</a> 会随之变色。</div>
+		<div class="alert alert-danger" role="alert">危险类型(danger)的文字内容，并且 <a href="#" class="alert-link">这个链接</a> 也会随之变色。</div>
+
+		<div class="jumbotron">
+			<div class="container">
+				<h1 id="hello" class="anchor">欢迎致辞</h1>
+				<p>下面这一段欢迎致辞是示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。示例文字。</p>
+				<p class="text-danger"><span class="label label-danger">错误</span>：在 off-canvas 状态时点击当前页面内的锚点链接，部分浏览器会显示错位。</p>
+				<p class="text-info"><span class="label label-info">待完成</span>：是否需要对 IE8 做兼容性调整。</p>
+				<p class="text-info"><span class="label label-info">待完成</span>：顶部 Popover 的内容和实现方式未定。</p>
+				<p class="text-info"><span class="label label-info">待完成</span>：这个模板是单页面模板，后期可能添加多个子页面。</p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">更多内容</a></p>
+			</div>
+		</div>
+
+		<h2 id="dashboard" class="anchor">控制面板</h2>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-6 col-sm-3 dial">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder" />
+					<p>
+						<strong>正常：</strong>说明内容
+					</p>
+				</div>
+				<div class="col-xs-6 col-sm-3 dial">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive img-rounded" alt="Generic placeholder" />
+					<p>
+						<strong>圆角：</strong>说明内容
+					</p>
+				</div>
+				<div class="col-xs-6 col-sm-3 dial">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive img-circle" alt="Generic placeholder" />
+					<p>
+						<strong>圆形：</strong>说明内容
+					</p>
+				</div>
+				<div class="col-xs-6 col-sm-3 dial">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive img-thumbnail" alt="Generic placeholder" />
+					<p>
+						<strong>缩略图：</strong>说明内容
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<h2 id="table" class="anchor">表格样式</h2>
+		<div class="table-responsive">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+					<th>编号</th>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1,001</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+					<tr>
+						<td>1,002</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+					<tr>
+						<td>1,003</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+					<tr>
+						<td>1,003</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+					<tr>
+						<td>1,004</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+					<tr>
+						<td>1,005</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+					<tr>
+						<td>1,006</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+					<tr>
+						<td>1,007</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+					<tr>
+						<td>1,008</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+					<tr>
+						<td>1,009</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+					<tr>
+						<td>1,010</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+						<td>文字</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="bottom" class="anchor">
+			&copy; MyFirst Template &bull; 1.0
+		</div>
+	</div>
+</div>
+
+<!-- jQuery -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Bootstrap Select -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+<!-- Bootstrap Datepicker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+
+<!-- Myfirst -->
+<script src="js/myfirst.js"></script>
+<!-- Custom -->
+<script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<div class="modal-dialog" role="document"><div class="modal-content">
+<form method="post" class="form-horizontal">
+	<input type="hidden" id="route" value="article/delete" />
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+		<div class="modal-title"><i class="fa fa-trash fa-fw"></i> 删除文章</div>
+	</div>
+	<div class="modal-body">
+		<div class="form-group">
+			<label class="col-sm-2 control-label">删除方式</label>
+			<div class="col-sm-10">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="1" /> 永久删除。
+					</label>
+					<span class="help-block">
+						如取消勾选，则仅标记为待删除。
+						普通用户访问待删除的文章时，会显示该文章已删除，而有权限的用户则可以查看或修改该文章。
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button type="submit" class="btn btn-danger">删除文章</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	</div>
+</form>
+</div></div>
